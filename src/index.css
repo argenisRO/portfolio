@@ -13,7 +13,7 @@
   --main-color: #383a45;
   --secondary-color: #2d2e36;
   --text-color: #8d91a6;
-  --alternative-text-color: #b0b3c6;
+  --alternative-text-color: #afafaf;
 
   font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -56,6 +56,7 @@ h6 {
 
 body {
   margin: 0;
+  line-height: 1;
 }
 
 #main {
@@ -81,6 +82,28 @@ body {
   font-weight: 600;
 }
 
+.menu-icons {
+  order: 1;
+  display: none;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.menu-icons a img {
+  display: block;
+  height: 2rem;
+}
+
+.icon {
+  filter: invert(65%) sepia(16%) saturate(332%) hue-rotate(193deg)
+    brightness(87%) contrast(89%);
+}
+
+.icon:hover {
+  filter: invert(62%) sepia(43%) saturate(8%) hue-rotate(11deg) brightness(103%)
+    contrast(93%);
+}
+
 .all-menu-items {
   display: none;
   flex-direction: column;
@@ -94,6 +117,14 @@ body {
   display: flex;
 }
 
+.menu-icons.activeMenu {
+  display: flex;
+}
+
+.menu-item a:hover {
+  color: var(--alternative-text-color);
+}
+
 .menu-item a {
   font-size: 1.5rem;
   color: var(--text-color);
@@ -101,7 +132,7 @@ body {
 
 .toggle-button {
   position: absolute;
-  top: 1.25rem;
+  top: 0.75rem;
   right: 2rem;
   display: flex;
   flex-direction: column;
@@ -132,22 +163,22 @@ body {
   background: url("./assets/svg/bg.svg"), #2d2e36;
   background-blend-mode: multiply;
   background-position: center;
+  overflow: hidden;
 }
 
 .display-showcase h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 .display-showcase h2 {
-  margin: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .display-text {
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-top: 3rem;
   color: var(--alternative-text-color);
   font-weight: 400;
@@ -187,21 +218,20 @@ body {
     flex-direction: row;
   }
 
+  .menu-icons {
+    display: flex;
+    order: 0;
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+
   .all-menu-items {
     display: flex;
     flex-direction: row;
     margin: 0;
   }
 
-  .display-showcase {
-  }
-
-  .display-showcase h1 {
-    font-size: 2.5rem;
-  }
-
   .display-showcase h2 {
-    font-size: 1.5rem;
     font-weight: 400;
     width: 100%;
   }
