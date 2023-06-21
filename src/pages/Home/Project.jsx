@@ -1,13 +1,20 @@
-export default function Project() {
+import Icon from "../../components/Icon";
+import githubIcon from "../../assets/svg/github-icon.svg";
+import linkIcon from "../../assets/svg/link-icon.svg";
+
+export default function Project({ projectData }) {
   return (
-    // TODO: finish this component for projects
     <div className="project">
-      <div>
-        <img src="placeholder" alt="project" className="project-image" />
+      <div className="project-img">
+        <img src={projectData.image} alt="project" className="project-image" />
       </div>
       <div className="project-info-container">
-        <h1 className="project-title">Project</h1>
-        <p className="project-description">test text</p>
+        <h1 className="project-title">{projectData.name}</h1>
+        <p className="project-description">{projectData.shortDescription}</p>
+        <div className="project-icons">
+          <Icon alias={"project page"} img={linkIcon} link={projectData.link} />
+          <Icon alias={"github"} img={githubIcon} link={projectData.github} />
+        </div>
       </div>
     </div>
   );
