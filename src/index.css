@@ -401,6 +401,7 @@ body {
   background-color: #2d2e36;
   padding: 1.25rem;
   overflow: hidden;
+  flex: 1;
 }
 
 .skill-box-heading {
@@ -521,10 +522,6 @@ body {
   .about-me-page-container {
     max-width: 1200px;
     margin: 0 auto;
-  }
-
-  .about-me-page-container-description {
-    font-size: 1.75rem;
   }
 
   .skill-sets {

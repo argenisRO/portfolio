@@ -5,6 +5,8 @@ import { Context } from "../../context";
 export default function About() {
   const { skills } = useContext(Context);
 
+  const otherSkills = [].concat(skills.devops, skills.others, skills.paradigms);
+
   return (
     <div className="about-page-header">
       <h1 className="about-page-title">About Me</h1>
@@ -25,7 +27,7 @@ export default function About() {
         <div className="skill-sets">
           <SkillsBox title={"Frontend"} skillList={skills.frontend} />
           <SkillsBox title={"Backend"} skillList={skills.backend} />
-          <SkillsBox title={"Others"} skillList={skills.devops} />
+          <SkillsBox title={"Others"} skillList={otherSkills} />
         </div>
       </div>
     </div>
