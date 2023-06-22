@@ -43,9 +43,9 @@ const store = {
   skills: {
     frontend: ["HTML", "CSS", "JavaScript", "React", "Redux", "jQuery"],
     backend: ["Python", "Django", "Node.js", "PostgreSQL", "SQLite", "GraphQL"],
-    devOps: ["Docker", "AWS", "Heroku", "Netlify", "Vercel", "GitHub Actions"],
+    devops: ["Docker", "AWS", "Heroku", "Netlify", "Vercel", "GitHub Actions"],
     paradigms: ["TDD", "RESTFul"],
-    other: [
+    others: [
       "Git",
       "GitHub",
       "Figma",

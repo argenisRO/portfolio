@@ -14,7 +14,7 @@ export default function Header() {
       <nav className="navbar">
         {/* Logo */}
         <div className="navbar-logo">
-          <Link to="#" className="logo">
+          <Link to="/" className="logo">
             @ArgenisRO
           </Link>
         </div>

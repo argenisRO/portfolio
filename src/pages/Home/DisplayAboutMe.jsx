@@ -2,13 +2,16 @@ import { Link } from "react-router-dom";
 
 import React, { useContext } from "react";
 import { Context } from "../../context";
-
-function Skill({ skillName }) {
-  return <div className="skillBtn">{skillName}</div>;
-}
+import Skill from "../../components/Skill";
 
 export default function DisplayAboutMe() {
   const { skills } = useContext(Context);
+
+  const previewSkills = [].concat(
+    skills.frontend,
+    skills.backend,
+    skills.devops
+  );
 
   return (
     <section className="about-me">
@@ -36,13 +39,7 @@ export default function DisplayAboutMe() {
         <div className="about-container-skill">
           <h1 className="about-ms-title">My Skills</h1>
           <div className="about-ms-skills">
-            {skills.frontend.map((skill) => (
-              <Skill skillName={skill} />
-            ))}
-            {skills.backend.map((skill) => (
-              <Skill skillName={skill} />
-            ))}
-            {skills.paradigms.map((skill) => (
+            {previewSkills.map((skill) => (
               <Skill skillName={skill} />
             ))}
           </div>
