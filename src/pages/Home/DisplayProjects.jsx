@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import Project from "./Project";
+
 import { Context } from "../../context";
+import Project from "../../components/Project";
 
 export default function DisplayProjects() {
   const { projects } = useContext(Context);
