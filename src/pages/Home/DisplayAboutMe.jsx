@@ -39,8 +39,8 @@ export default function DisplayAboutMe() {
         <div className="about-container-skill">
           <h1 className="about-ms-title">My Skills</h1>
           <div className="about-ms-skills">
-            {previewSkills.map((skill) => (
-              <Skill skillName={skill} />
+            {previewSkills.map((skill, id) => (
+              <Skill key={id} skillName={skill} />
             ))}
           </div>
         </div>

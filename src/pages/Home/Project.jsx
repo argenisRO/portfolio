@@ -1,6 +1,4 @@
 import Icon from "../../components/Icon";
-import githubIcon from "../../assets/svg/github-icon.svg";
-import linkIcon from "../../assets/svg/link-icon.svg";
 
 export default function Project({ projectData }) {
   return (
@@ -12,8 +10,8 @@ export default function Project({ projectData }) {
         <h1 className="project-title">{projectData.name}</h1>
         <p className="project-description">{projectData.shortDescription}</p>
         <div className="project-icons">
-          <Icon alias={"project page"} img={linkIcon} link={projectData.link} />
-          <Icon alias={"github"} img={githubIcon} link={projectData.github} />
+          <Icon alias="Link" link={projectData.link} />
+          <Icon alias="Github" link={projectData.github} />
         </div>
       </div>
     </div>

@@ -1,4 +1,8 @@
 import { createContext } from "react";
+import githubLogo from "./assets/svg/github-icon.svg";
+import linkedinLogo from "./assets/svg/linkedin-icon.svg";
+import emailLogo from "./assets/svg/email-icon.svg";
+import linkLogo from "./assets/svg/link-icon.svg";
 
 export const Context = createContext();
 
@@ -46,6 +50,12 @@ const store = {
     devops: ["Docker", "AWS", "Heroku", "Netlify", "Vercel"],
     paradigms: ["TDD", "RESTFul"],
     others: ["Git", "Figma"],
+  },
+  icons: {
+    Github: githubLogo,
+    Linkedin: linkedinLogo,
+    Email: emailLogo,
+    Link: linkLogo,
   },
 };
 

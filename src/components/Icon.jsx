@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../context";
 
-export default function Icon({ alias, img, link }) {
-  //  TODO 1: update store to fetch icons based on given alias
+export default function Icon({ alias, link, specialClass }) {
+  const { icons } = useContext(Context);
+
   return (
     <Link to={link} className="icon">
-      <img src={img} className={`${alias}-icon`} alt={`${alias} icon`} />
+      <img
+        src={icons[alias]}
+        className={specialClass && specialClass}
+        alt={`${alias} icon`}
+      />
     </Link>
   );
 }

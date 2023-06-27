@@ -7,7 +7,7 @@ import Root from "./pages/Root";
 import ContextProvider from "./context";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
+import Contact, { action as ContactAction } from "./pages/Contact/Contact";
 import Projects from "./pages/Projects/Projects";
 
 const router = createBrowserRouter([
@@ -30,6 +30,7 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+        action: ContactAction,
       },
     ],
   },

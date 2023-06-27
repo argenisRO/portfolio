@@ -21,8 +21,8 @@ export default function Header() {
 
         {/* Link Icons */}
         <div ref={menuIcons} className="menu-icons">
-          <Icon alias={"github"} img={githubIcon} link={""} />
-          <Icon alias={"linkedin"} img={linkedinIcon} link={""} />
+          <Icon alias="Github" link="" />
+          <Icon alias="Linkedin" link="" />
         </div>
 
         {/* Navigation Menu */}
