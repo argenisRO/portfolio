@@ -8,7 +8,7 @@ export default function About() {
   const otherSkills = [].concat(skills.devops, skills.others, skills.paradigms);
 
   return (
-    <div className="about-page-header">
+    <div className="large-display-container">
       <h1 className="about-page-title">About Me</h1>
       <hr class="about-extra-separator"></hr>
       <p className="about-page-description">

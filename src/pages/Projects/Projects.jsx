@@ -10,7 +10,7 @@ export default function Projects() {
       <section className="display-element display-element-project">
         <h1>Projects</h1>
       </section>
-      <div className="projects">
+      <div className="projects center-set">
         {projects.map((projectData, i) => (
           <Project key={i} projectData={projectData} detailed />
         ))}

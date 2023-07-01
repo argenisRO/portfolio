@@ -250,7 +250,7 @@ body {
   height: 2rem;
 }
 
-.about-me {
+.large-display-container {
   display: flex;
   flex-direction: column;
   max-width: 1920px;
@@ -297,11 +297,6 @@ body {
   overflow: hidden;
 }
 
-.about-gtk-title {
-  font-size: 1.75rem;
-  margin: 0;
-}
-
 .about-gtk-desc {
   color: var(--text-color);
   line-height: 1.5rem;
@@ -343,7 +338,7 @@ body {
   overflow: hidden;
 }
 
-.about-ms-title {
+.semi-box-title {
   font-size: 1.75rem;
   margin: 0;
 }
@@ -363,13 +358,6 @@ body {
   background-color: var(--highlight-color);
   font-size: 0.75rem;
   border: none;
-}
-
-.about-page-header {
-  display: flex;
-  flex-direction: column;
-  max-width: 1920px;
-  margin: 0 1.25rem;
 }
 
 .about-page-title {
@@ -408,12 +396,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
-}
-.skills-section {
-  display: flex;
-  flex-direction: column;
-  max-width: 1920px;
-  margin: 0 1.25rem;
 }
 
 .skill-box-container {
@@ -555,7 +537,7 @@ body {
     margin: 3.75rem auto;
   }
 
-  .projects {
+  .center-set {
     margin: 0 auto;
   }
 
@@ -589,13 +571,6 @@ body {
   .about-container,
   .about-container-skill {
     flex: 1;
-  }
-  .about-ms-title {
-    float: right;
-  }
-
-  .about-me {
-    margin: 0 auto;
   }
 
   .about-page-description {

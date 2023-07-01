@@ -14,7 +14,7 @@ export default function DisplayAboutMe() {
   );
 
   return (
-    <section className="about-me">
+    <section className="large-display-container center-set">
       <div className="about-extra-title">About Me</div>
       <hr className="about-extra-separator"></hr>
       <p className="about-extra-text">
@@ -25,7 +25,7 @@ export default function DisplayAboutMe() {
       </p>
       <div className="about-extra-info">
         <div className="about-container">
-          <h1 className="about-gtk-title">Get to know me</h1>
+          <h1 className="semi-box-title">Get to know me</h1>
           <p className="about-gtk-desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             accusantium possimus earum! Assumenda ex reprehenderit nemo labore,
@@ -37,7 +37,7 @@ export default function DisplayAboutMe() {
           </Link>
         </div>
         <div className="about-container-skill">
-          <h1 className="about-ms-title">My Skills</h1>
+          <h1 className="semi-box-title">My Skills</h1>
           <div className="about-ms-skills">
             {previewSkills.map((skill, id) => (
               <Skill key={id} skillName={skill} />

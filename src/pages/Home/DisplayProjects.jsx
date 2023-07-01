@@ -8,8 +8,8 @@ export default function DisplayProjects() {
 
   return (
     <>
-      <h1 className="projects-heading">Projects</h1>
-      <div className="projects">
+      <h1 className="about-extra-title">Projects</h1>
+      <div className="projects center-set">
         {projects.map((projectData, i) => (
           <Project key={i} projectData={projectData} />
         ))}
