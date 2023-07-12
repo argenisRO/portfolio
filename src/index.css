@@ -254,7 +254,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1920px;
-  margin: 0 1.25rem;
+  margin: 0 auto;
 }
 
 .about-extra-title {
@@ -306,6 +306,7 @@ body {
   height: 100%;
   font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 1.25rem;
 }
 
 .project-tech-stack {
