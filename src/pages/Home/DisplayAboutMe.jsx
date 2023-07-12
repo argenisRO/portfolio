@@ -5,7 +5,7 @@ import { Context } from "../../context";
 import Skill from "../../components/Skill";
 
 export default function DisplayAboutMe() {
-  const { skills } = useContext(Context);
+  const { personal, skills } = useContext(Context);
 
   const previewSkills = [].concat(
     skills.frontend,
@@ -17,20 +17,18 @@ export default function DisplayAboutMe() {
     <section className="large-display-container center-set">
       <div className="about-extra-title">About Me</div>
       <hr className="about-extra-separator"></hr>
-      <p className="about-extra-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-        accusantium possimus earum! Assumenda ex reprehenderit nemo labore,
-        obcaecati repellat a! Laborum iure quae sequi accusamus, nesciunt quia
-        assumenda. Eveniet, eius.
-      </p>
       <div className="about-extra-info">
         <div className="about-container">
           <h1 className="semi-box-title">Get to know me</h1>
           <p className="about-gtk-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            accusantium possimus earum! Assumenda ex reprehenderit nemo labore,
-            obcaecati repellat a! Laborum iure quae sequi accusamus, nesciunt
-            quia assumenda. Eveniet, eius.
+            Hey, I'm Argenis Rodriguez, a tech lover who enjoys building and
+            fixing. I've done everything from office admin to CAD/CAM tech at a
+            Dental Lab, and even built a system for our CAD files. Outside work,
+            I've made a chat app called qChat, a club organizer tool, and a
+            bunch of fun command-line games. I know Python, JavaScript,
+            PostgreSQL, Docker and more. I'm still learning, but I never back
+            down from a challenge. If you need a tech-savvy go-getter, let's
+            chat!
           </p>
           <Link className="about-gtk-btn" to="/contact">
             Contact

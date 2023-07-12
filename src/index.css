@@ -389,8 +389,8 @@ body {
 .about-me-page-container-description {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  text-align: center;
   margin: 1rem 0;
+  color: var(--text-color);
 }
 
 .skill-sets {
@@ -566,7 +566,7 @@ body {
   .about-extra-info {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 1.25rem;
+    margin: 1rem 1.25rem;
   }
 
   .about-container,
@@ -581,7 +581,7 @@ body {
 
   .about-me-page-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 
   .skill-sets {

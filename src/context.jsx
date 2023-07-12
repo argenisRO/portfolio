@@ -11,7 +11,7 @@ const store = {
     {
       name: "qChat",
       shortDescription:
-        "Travel to the premiere mountain tops of New Zealand with our guided tours. Take in the majestic scenary and witness beauty.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus architecto, esse iste quisquam hic at reiciendis itaque dignissimos sint suscipit quod distinctio ipsum explicabo repellat numquam. Maxime laborum temporibus tempore!",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus architecto, esse iste quisquam hic at reiciendis itaque dignissimos sint suscipit quod distinctio ipsum explicabo repellat numquam. Maxime laborum temporibus tempore!",
       image:
